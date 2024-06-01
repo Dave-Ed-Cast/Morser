@@ -18,22 +18,27 @@ struct QuickTranslateView: View {
                 ForEach(sentences.toArray().sorted(by: { sent1, sent2 in
                     return sent1.order < sent2.order
                 })) { sentence in
-                    Text(sentence.sentence!)
-                        .onTapGesture {
-                            if !vibrationEngine.isVibrating() {
-                                WatchCommunicationManager.shared.sendVibrationRequest(sentence.sentence!)
-                                vibrationEngine.readMorseCode(morseCode: sentence.sentence!.morseCode())
-                            } else if vibrationEngine.morseCodeString == sentence.sentence!.morseCode() {
-                                    vibrationEngine.stopReading()
-                                }
-                            }
-                        .if(vibrationEngine.isVibrating() && vibrationEngine.morseCodeString == sentence.sentence!.morseCode()) { view in
-                            view.listRowBackground(Color.blue)
+
+                    // MARK: Now 'Text' is a button to tap in the list
+                    Button {
+                        if !vibrationEngine.isVibrating() {
+                            WatchCommunicationManager.shared.sendVibrationRequest(sentence.sentence!)
+                            vibrationEngine.readMorseCode(morseCode: sentence.sentence!.morseCode())
+                        } else if vibrationEngine.morseCodeString == sentence.sentence!.morseCode() {
+                            vibrationEngine.stopReading()
                         }
-                        .if((vibrationEngine.isVibrating() && vibrationEngine.morseCodeString != sentence.sentence!.morseCode())) { view in
-                            view
-                                .foregroundStyle(Color.gray)
-                        }
+                    } label: {
+                        Text(sentence.sentence!)
+                    }
+                    // MARK: End of change
+
+                    .if(vibrationEngine.isVibrating() && vibrationEngine.morseCodeString == sentence.sentence!.morseCode()) { view in
+                        view.listRowBackground(Color.blue)
+                    }
+                    .if((vibrationEngine.isVibrating() && vibrationEngine.morseCodeString != sentence.sentence!.morseCode())) { view in
+                        view
+                            .foregroundStyle(Color.gray)
+                    }
                 }
                 .if(!vibrationEngine.isVibrating(), transform: { view in
                     view
@@ -88,7 +93,7 @@ struct QuickTranslateView_Previews: PreviewProvider {
         sentence3.order = 2
 
         return Group {
-            
+
             VStack {
                 QuickTranslateView()
                     .environment(\.managedObjectContext, context)
