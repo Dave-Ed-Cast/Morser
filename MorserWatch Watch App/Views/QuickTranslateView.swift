@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct QuickTranslateView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.order, order: .forward)]) private var sentences: FetchedResults<Sentence>
@@ -68,10 +69,25 @@ struct QuickTranslateView: View {
         }
     }
 }
+
 #Preview {
-    @StateObject var dataController = DataController()
+    let dataController = DataController()
+    let context = dataController.container.viewContext
+
+    let sentence1 = Sentence(context: context)
+    sentence1.sentence = "I'm here to help."
+    sentence1.order = 0
+
+    let sentence2 = Sentence(context: context)
+    sentence2.sentence = "Yes, I can guide you."
+    sentence2.order = 1
+
+    let sentence3 = Sentence(context: context)
+    sentence3.sentence = "I understand, let me assist you."
+    sentence3.order = 2
+
     return QuickTranslateView()
-        .environment(\.managedObjectContext, dataController.container.viewContext)
+        .environment(\.managedObjectContext, context)
 }
 
 #Preview ("Dark mode") {
@@ -79,4 +95,24 @@ struct QuickTranslateView: View {
     return QuickTranslateView()
         .environment(\.managedObjectContext, dataController.container.viewContext)
         .preferredColorScheme(.dark)
+}
+
+#Preview {
+    let dataController = DataController()
+    let context = dataController.container.viewContext
+
+    let sentence1 = Sentence(context: context)
+    sentence1.sentence = "I'm here to help."
+    sentence1.order = 0
+
+    let sentence2 = Sentence(context: context)
+    sentence2.sentence = "Yes, I can guide you."
+    sentence2.order = 1
+
+    let sentence3 = Sentence(context: context)
+    sentence3.sentence = "I understand, let me assist you."
+    sentence3.order = 2
+
+    return QuickTranslateView()
+        .environment(\.managedObjectContext, context)
 }
