@@ -23,14 +23,18 @@
 			<true/>
 			<key>INIntentDescriptionID</key>
 			<string>aQCfis</string>
+			<key>INIntentLastParameterTag</key>
+			<integer>1</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key></key>
 				<dict>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
-					<key>INIntentParameterCombinationUpdatesLinked</key>
-					<true/>
+					<key>INIntentParameterCombinationTitle</key>
+					<string>Encode</string>
+					<key>INIntentParameterCombinationTitleID</key>
+					<string>upfhF9</string>
 				</dict>
 			</dict>
 			<key>INIntentName</key>
@@ -39,8 +43,6 @@
 			<dict>
 				<key></key>
 				<dict>
-					<key>INIntentParameterCombinationIsPrimary</key>
-					<true/>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 				</dict>

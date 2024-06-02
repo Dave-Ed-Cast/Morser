@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Intents
 
 struct EncodeView: View {
     @StateObject var speechRecognizer = SpeechRecognizer()
@@ -27,6 +28,17 @@ struct EncodeView: View {
         NavigationView {
             VStack {
                 Spacer()
+                Button("Perform Intent") {
+                    let intent = EncodeIntent()
+                    let interaction = INInteraction(intent: intent, response: nil)
+                    interaction.donate { error in
+                        if let error = error {
+                            print("Error donating interaction: \(error.localizedDescription)")
+                        } else {
+                            print("Interaction donated successfully")
+                        }
+                    }
+                }
                 HStack {
                     TextField("Sentence to encode", text: (isRecording ? $speechRecognizer.transcript : ($enteredText)))
                         .disabled(isRecording || vibrationEngine.isVibrating())
@@ -37,6 +49,7 @@ struct EncodeView: View {
                         }
                         .textInputAutocapitalization(.never)
                         .textFieldStyle(.roundedBorder)
+                        .foregroundStyle(.gray)
                         .disableAutocorrection(true)
                         .padding(.leading)
                     Button {

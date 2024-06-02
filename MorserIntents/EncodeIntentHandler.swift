@@ -10,7 +10,7 @@ import Intents
 
 class EncodeIntentHandler: NSObject, EncodeIntentHandling {
     func handle(intent: EncodeIntent, completion: @escaping (EncodeIntentResponse) -> Void) {
-        // Handle the intent here
         
+
     }
 }
