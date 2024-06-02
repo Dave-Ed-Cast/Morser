@@ -16,6 +16,7 @@
 		3E4890D12C0C807200B43DE2 /* MorserIntentsUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E4890C52C0C807200B43DE2 /* MorserIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3E4890D42C0C807200B43DE2 /* MorserIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E4890B92C0C807200B43DE2 /* MorserIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3E4890DC2C0C809600B43DE2 /* EncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */; };
+		3E8995112C0C9D5100AF3290 /* Encode.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B12C0C7D3D00B43DE2 /* Encode.intentdefinition */; };
 		9D0CB0572BF5E78500FD8E57 /* Sentence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0552BF5E78500FD8E57 /* Sentence.xcdatamodeld */; };
 		9D0CB0592BF5E87F00FD8E57 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0582BF5E87F00FD8E57 /* DataController.swift */; };
 		9D1CB9B02BCEB5930088F90C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CB9AF2BCEB5930088F90C /* SpeechRecognizer.swift */; };
@@ -523,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4890DC2C0C809600B43DE2 /* EncodeIntentHandler.swift in Sources */,
+				3E8995112C0C9D5100AF3290 /* Encode.intentdefinition in Sources */,
 				3E4890BF2C0C807200B43DE2 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
