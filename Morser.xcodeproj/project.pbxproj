@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E4890B22C0C7D3D00B43DE2 /* Encode.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B12C0C7D3D00B43DE2 /* Encode.intentdefinition */; };
+		3E4890BC2C0C807200B43DE2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4890BB2C0C807200B43DE2 /* Intents.framework */; };
+		3E4890BF2C0C807200B43DE2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890BE2C0C807200B43DE2 /* IntentHandler.swift */; };
+		3E4890C72C0C807200B43DE2 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4890C62C0C807200B43DE2 /* IntentsUI.framework */; };
+		3E4890CA2C0C807200B43DE2 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890C92C0C807200B43DE2 /* IntentViewController.swift */; };
+		3E4890CD2C0C807200B43DE2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3E4890CC2C0C807200B43DE2 /* Base */; };
+		3E4890D12C0C807200B43DE2 /* MorserIntentsUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E4890C52C0C807200B43DE2 /* MorserIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3E4890D42C0C807200B43DE2 /* MorserIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E4890B92C0C807200B43DE2 /* MorserIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3E4890DC2C0C809600B43DE2 /* EncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */; };
 		9D0CB0572BF5E78500FD8E57 /* Sentence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0552BF5E78500FD8E57 /* Sentence.xcdatamodeld */; };
 		9D0CB0592BF5E87F00FD8E57 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0582BF5E87F00FD8E57 /* DataController.swift */; };
 		9D1CB9B02BCEB5930088F90C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CB9AF2BCEB5930088F90C /* SpeechRecognizer.swift */; };
@@ -46,6 +55,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E4890CF2C0C807200B43DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D3DED1F2BCD109400DAD675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E4890C42C0C807200B43DE2;
+			remoteInfo = MorserIntentsUI;
+		};
+		3E4890D22C0C807200B43DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D3DED1F2BCD109400DAD675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E4890B82C0C807200B43DE2;
+			remoteInfo = MorserIntents;
+		};
 		9DAE65452C00E68A00663324 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D3DED1F2BCD109400DAD675 /* Project object */;
@@ -56,6 +79,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3E4890DB2C0C807200B43DE2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3E4890D42C0C807200B43DE2 /* MorserIntents.appex in Embed Foundation Extensions */,
+				3E4890D12C0C807200B43DE2 /* MorserIntentsUI.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DAE65482C00E68A00663324 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +105,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3E4890B12C0C7D3D00B43DE2 /* Encode.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Encode.intentdefinition; sourceTree = "<group>"; };
+		3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeIntentHandler.swift; sourceTree = "<group>"; };
+		3E4890B92C0C807200B43DE2 /* MorserIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MorserIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4890BB2C0C807200B43DE2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		3E4890BE2C0C807200B43DE2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		3E4890C02C0C807200B43DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4890C52C0C807200B43DE2 /* MorserIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MorserIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4890C62C0C807200B43DE2 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		3E4890C92C0C807200B43DE2 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		3E4890CC2C0C807200B43DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3E4890CE2C0C807200B43DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E4890DD2C0C80E900B43DE2 /* MorserWatch Watch AppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MorserWatch Watch AppDebug.entitlements"; sourceTree = "<group>"; };
+		3E4890DE2C0C810300B43DE2 /* MorserDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MorserDebug.entitlements; sourceTree = "<group>"; };
 		9D0CB0562BF5E78500FD8E57 /* Sentence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sentence.xcdatamodel; sourceTree = "<group>"; };
 		9D0CB0582BF5E87F00FD8E57 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9D1CB9AE2BCEB2810088F90C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +152,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3E4890B62C0C807200B43DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4890BC2C0C807200B43DE2 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4890C22C0C807200B43DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4890C72C0C807200B43DE2 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D3DED242BCD109400DAD675 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,6 +185,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E4890BA2C0C807200B43DE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E4890BB2C0C807200B43DE2 /* Intents.framework */,
+				3E4890C62C0C807200B43DE2 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E4890BD2C0C807200B43DE2 /* MorserIntents */ = {
+			isa = PBXGroup;
+			children = (
+				3E4890B12C0C7D3D00B43DE2 /* Encode.intentdefinition */,
+				3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */,
+				3E4890BE2C0C807200B43DE2 /* IntentHandler.swift */,
+				3E4890C02C0C807200B43DE2 /* Info.plist */,
+			);
+			path = MorserIntents;
+			sourceTree = "<group>";
+		};
+		3E4890C82C0C807200B43DE2 /* MorserIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				3E4890C92C0C807200B43DE2 /* IntentViewController.swift */,
+				3E4890CB2C0C807200B43DE2 /* MainInterface.storyboard */,
+				3E4890CE2C0C807200B43DE2 /* Info.plist */,
+			);
+			path = MorserIntentsUI;
+			sourceTree = "<group>";
+		};
 		9D2099822BCD37D800229594 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +236,9 @@
 				9DED8FBB2BF793B9008D0B29 /* .swiftlint.yml */,
 				9D3DED292BCD109400DAD675 /* Morser */,
 				9DAE653B2C00E68900663324 /* MorserWatch Watch App */,
+				3E4890BD2C0C807200B43DE2 /* MorserIntents */,
+				3E4890C82C0C807200B43DE2 /* MorserIntentsUI */,
+				3E4890BA2C0C807200B43DE2 /* Frameworks */,
 				9D3DED282BCD109400DAD675 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +248,8 @@
 			children = (
 				9D3DED272BCD109400DAD675 /* Morser.app */,
 				9DAE653A2C00E68900663324 /* MorserWatch Watch App.app */,
+				3E4890B92C0C807200B43DE2 /* MorserIntents.appex */,
+				3E4890C52C0C807200B43DE2 /* MorserIntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +257,7 @@
 		9D3DED292BCD109400DAD675 /* Morser */ = {
 			isa = PBXGroup;
 			children = (
+				3E4890DE2C0C810300B43DE2 /* MorserDebug.entitlements */,
 				9D39222E2BCFB86E00FA1D05 /* Localizable.xcstrings */,
 				9D1CB9AE2BCEB2810088F90C /* Info.plist */,
 				9DA6966F2BCD7154002B9CBB /* Extensions.swift */,
@@ -181,6 +281,7 @@
 		9DAE653B2C00E68900663324 /* MorserWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				3E4890DD2C0C80E900B43DE2 /* MorserWatch Watch AppDebug.entitlements */,
 				9DD163062C03A89C006A410D /* MorserWatch-Watch-App-Info.plist */,
 				9DAE653C2C00E68900663324 /* MorserWatchApp.swift */,
 				9DAE65502C00E8CE00663324 /* WatchCommunicationManager.swift */,
@@ -225,6 +326,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3E4890B82C0C807200B43DE2 /* MorserIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4890D82C0C807200B43DE2 /* Build configuration list for PBXNativeTarget "MorserIntents" */;
+			buildPhases = (
+				3E4890B52C0C807200B43DE2 /* Sources */,
+				3E4890B62C0C807200B43DE2 /* Frameworks */,
+				3E4890B72C0C807200B43DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorserIntents;
+			productName = MorserIntents;
+			productReference = 3E4890B92C0C807200B43DE2 /* MorserIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3E4890C42C0C807200B43DE2 /* MorserIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E4890D52C0C807200B43DE2 /* Build configuration list for PBXNativeTarget "MorserIntentsUI" */;
+			buildPhases = (
+				3E4890C12C0C807200B43DE2 /* Sources */,
+				3E4890C22C0C807200B43DE2 /* Frameworks */,
+				3E4890C32C0C807200B43DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MorserIntentsUI;
+			productName = MorserIntentsUI;
+			productReference = 3E4890C52C0C807200B43DE2 /* MorserIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		9D3DED262BCD109400DAD675 /* Morser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D3DED362BCD109500DAD675 /* Build configuration list for PBXNativeTarget "Morser" */;
@@ -234,11 +369,14 @@
 				9D3DED252BCD109400DAD675 /* Resources */,
 				9DED8FBA2BF79015008D0B29 /* Swift Lint */,
 				9DAE65482C00E68A00663324 /* Embed Watch Content */,
+				3E4890DB2C0C807200B43DE2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				9DAE65462C00E68A00663324 /* PBXTargetDependency */,
+				3E4890D02C0C807200B43DE2 /* PBXTargetDependency */,
+				3E4890D32C0C807200B43DE2 /* PBXTargetDependency */,
 			);
 			name = Morser;
 			productName = Morser;
@@ -272,6 +410,12 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					3E4890B82C0C807200B43DE2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3E4890C42C0C807200B43DE2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					9D3DED262BCD109400DAD675 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -305,11 +449,28 @@
 			targets = (
 				9D3DED262BCD109400DAD675 /* Morser */,
 				9DAE65392C00E68900663324 /* MorserWatch Watch App */,
+				3E4890B82C0C807200B43DE2 /* MorserIntents */,
+				3E4890C42C0C807200B43DE2 /* MorserIntentsUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3E4890B72C0C807200B43DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4890C32C0C807200B43DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4890CD2C0C807200B43DE2 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D3DED252BCD109400DAD675 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,6 +518,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3E4890B52C0C807200B43DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4890DC2C0C809600B43DE2 /* EncodeIntentHandler.swift in Sources */,
+				3E4890BF2C0C807200B43DE2 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E4890C12C0C807200B43DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4890CA2C0C807200B43DE2 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9D3DED232BCD109400DAD675 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +553,7 @@
 				9D7F43402C00C4BB00DB6DE3 /* ExpandingCircle.swift in Sources */,
 				9DAE654F2C00E89D00663324 /* WatchConnectivityProvider.swift in Sources */,
 				9D3DED3A2BCD167600DAD675 /* EncodeView.swift in Sources */,
+				3E4890B22C0C7D3D00B43DE2 /* Encode.intentdefinition in Sources */,
 				9D3DED422BCD248100DAD675 /* MorseEncoder.swift in Sources */,
 				9D9BC1582BECE24200CD2C5B /* SettingsView.swift in Sources */,
 			);
@@ -402,6 +581,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3E4890D02C0C807200B43DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E4890C42C0C807200B43DE2 /* MorserIntentsUI */;
+			targetProxy = 3E4890CF2C0C807200B43DE2 /* PBXContainerItemProxy */;
+		};
+		3E4890D32C0C807200B43DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E4890B82C0C807200B43DE2 /* MorserIntents */;
+			targetProxy = 3E4890D22C0C807200B43DE2 /* PBXContainerItemProxy */;
+		};
 		9DAE65462C00E68A00663324 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9DAE65392C00E68900663324 /* MorserWatch Watch App */;
@@ -409,7 +598,124 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		3E4890CB2C0C807200B43DE2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E4890CC2C0C807200B43DE2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3E4890D62C0C807200B43DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WLW428B75Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MorserIntentsUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MorserIntentsUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snesnopic.Morser.MorserIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E4890D72C0C807200B43DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FRYF657J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MorserIntentsUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MorserIntentsUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snesnopic.Morser.MorserIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E4890D92C0C807200B43DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WLW428B75Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MorserIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MorserIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snesnopic.Morser.MorserIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E4890DA2C0C807200B43DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3FRYF657J2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MorserIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MorserIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.snesnopic.Morser.MorserIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		9D3DED342BCD109500DAD675 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,7 +844,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Morser/Morser.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Morser/MorserDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
@@ -631,6 +937,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MorserWatch Watch App/MorserWatch Watch AppDebug.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MorserWatch Watch App/Preview Content\"";
@@ -692,6 +999,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3E4890D52C0C807200B43DE2 /* Build configuration list for PBXNativeTarget "MorserIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4890D62C0C807200B43DE2 /* Debug */,
+				3E4890D72C0C807200B43DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E4890D82C0C807200B43DE2 /* Build configuration list for PBXNativeTarget "MorserIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E4890D92C0C807200B43DE2 /* Debug */,
+				3E4890DA2C0C807200B43DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9D3DED222BCD109400DAD675 /* Build configuration list for PBXProject "Morser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
