@@ -30,6 +30,7 @@ struct EncodeView: View {
                 Spacer()
                 Button("Perform Intent") {
                     let intent = EncodeIntent()
+                    intent.suggestedInvocationPhrase = "Text to Morse"
                     let interaction = INInteraction(intent: intent, response: nil)
                     interaction.donate { error in
                         if let error = error {

@@ -17,9 +17,12 @@
 		3E4890D42C0C807200B43DE2 /* MorserIntents.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3E4890B92C0C807200B43DE2 /* MorserIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3E4890DC2C0C809600B43DE2 /* EncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */; };
 		3E8995112C0C9D5100AF3290 /* Encode.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B12C0C7D3D00B43DE2 /* Encode.intentdefinition */; };
-		3E8995122C0CC03600AF3290 /* VibrationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DED3F2BCD23E700DAD675 /* VibrationEngine.swift */; };
-		3E8995132C0CC04000AF3290 /* EncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */; };
-		3E8995142C0CC04400AF3290 /* EncodeIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4890B32C0C7D8500B43DE2 /* EncodeIntentHandler.swift */; };
+		3EAB57462C0DA400002978C5 /* VibrationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DED3F2BCD23E700DAD675 /* VibrationEngine.swift */; };
+		3EAB57472C0DA40E002978C5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6966F2BCD7154002B9CBB /* Extensions.swift */; };
+		3EAB57482C0DA41E002978C5 /* TorchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD801DA2C04B630007DEC31 /* TorchEngine.swift */; };
+		3EAB57492C0DA421002978C5 /* BeepPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD425092BE3C5BF009EE623 /* BeepPlayer.swift */; };
+		3EAB574A2C0DA430002978C5 /* MorseEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DED412BCD248100DAD675 /* MorseEncoder.swift */; };
+		3EAB574B2C0DA43A002978C5 /* Sentence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0552BF5E78500FD8E57 /* Sentence.xcdatamodeld */; };
 		9D0CB0572BF5E78500FD8E57 /* Sentence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0552BF5E78500FD8E57 /* Sentence.xcdatamodeld */; };
 		9D0CB0592BF5E87F00FD8E57 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0CB0582BF5E87F00FD8E57 /* DataController.swift */; };
 		9D1CB9B02BCEB5930088F90C /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1CB9AF2BCEB5930088F90C /* SpeechRecognizer.swift */; };
@@ -526,10 +529,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E8995122C0CC03600AF3290 /* VibrationEngine.swift in Sources */,
+				3EAB57482C0DA41E002978C5 /* TorchEngine.swift in Sources */,
+				3EAB57472C0DA40E002978C5 /* Extensions.swift in Sources */,
+				3EAB57462C0DA400002978C5 /* VibrationEngine.swift in Sources */,
+				3EAB574A2C0DA430002978C5 /* MorseEncoder.swift in Sources */,
 				3E4890DC2C0C809600B43DE2 /* EncodeIntentHandler.swift in Sources */,
+				3EAB574B2C0DA43A002978C5 /* Sentence.xcdatamodeld in Sources */,
 				3E8995112C0C9D5100AF3290 /* Encode.intentdefinition in Sources */,
 				3E4890BF2C0C807200B43DE2 /* IntentHandler.swift in Sources */,
+				3EAB57492C0DA421002978C5 /* BeepPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,7 +555,6 @@
 			files = (
 				9DD4250A2BE3C5BF009EE623 /* BeepPlayer.swift in Sources */,
 				9D3DED2D2BCD109400DAD675 /* ParentView.swift in Sources */,
-				3E8995132C0CC04000AF3290 /* EncodeIntentHandler.swift in Sources */,
 				9DD801DB2C04B630007DEC31 /* TorchEngine.swift in Sources */,
 				9D1CB9B02BCEB5930088F90C /* SpeechRecognizer.swift in Sources */,
 				9D3DED3C2BCD16DE00DAD675 /* QuickTranslateView.swift in Sources */,
@@ -580,7 +587,6 @@
 				9DD163022C039F9B006A410D /* DataController.swift in Sources */,
 				9DD163002C039909006A410D /* VibrationEngine.swift in Sources */,
 				9DD162FA2C038F91006A410D /* Sentence.xcdatamodeld in Sources */,
-				3E8995142C0CC04400AF3290 /* EncodeIntentHandler.swift in Sources */,
 				9DAE65512C00E8CE00663324 /* WatchCommunicationManager.swift in Sources */,
 				9DD162FD2C0397A3006A410D /* EncodeView.swift in Sources */,
 			);
